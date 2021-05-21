@@ -1,0 +1,20 @@
+<article class="product">
+  <img [src]="product.image" [alt]="product.description" class="product__image">
+  <div class="product__content">
+    <div class="product__info">
+      <h2 class="product__title">{{product.name}}</h2>
+      <p class="product__subtitle">{{product.description}}</p>
+    </div>
+    <div class="product__fee">
+      <h2 class="product__title product__title--big">{{product.price}}</h2>
+      <p class="product__subtitle product__subtitle--right">
+        Restam <span class="current">{{product.fee.current}}</span> / <span class="total">{{product.fee.total}}</span>
+      </p>
+    </div>
+  </div>
+  <h3 class="product__text">Contribua:</h3>
+  <div class="product__actions">
+    <button class="button button--pix">Pix</button>
+    <button class="button button--qr">QR Code</button>
+  </div>
+</article>
