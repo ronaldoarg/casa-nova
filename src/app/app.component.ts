@@ -72,7 +72,7 @@ export class AppComponent implements OnInit {
           current: 4
         },
         description: "Para tomar aquele café da manhã gostoso",
-        price: "10"
+        price: "15"
       },
       {
         image: "src/assets/images/products/tacas.jpeg",
@@ -102,6 +102,36 @@ export class AppComponent implements OnInit {
           current: 4
         },
         description: "Potinhos variados sempre quebram um galho",
+        price: "20"
+      },
+      {
+        image: "src/assets/images/products/garrafa.jpeg",
+        name: "Garrafa",
+        fee: {
+          total: 3,
+          current: 3
+        },
+        description: "Garrafa",
+        price: "20"
+      },
+      {
+        image: "src/assets/images/products/utensilios.jpeg",
+        name: "Utensilios",
+        fee: {
+          total: 3,
+          current: 1
+        },
+        description: "Utensilios",
+        price: "30"
+      },
+      {
+        image: "src/assets/images/products/escorredor.jpeg",
+        name: "Escorredor",
+        fee: {
+          total: 6,
+          current: 4
+        },
+        description: "Escorredor",
         price: "20"
       },
     ]
