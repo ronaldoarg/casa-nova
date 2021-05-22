@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-popup',
@@ -11,9 +11,17 @@ export class PopupComponent implements OnInit {
   @Input() isVisible: boolean;
   @Output() update: EventEmitter<boolean> = new EventEmitter();
 
-  constructor() { }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
+  }
+
+  ngOnChanges() {
+    if (this.isVisible) {
+      this.renderer.addClass(document.body, 'no-overflow');
+    } else {
+      this.renderer.removeClass(document.body, 'no-overflow');
+    }
   }
 
 }

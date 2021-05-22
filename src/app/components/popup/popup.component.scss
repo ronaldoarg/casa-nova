@@ -29,7 +29,7 @@ $size: 560px;
             font-family: $title;
             text-align: center;
             font-size: 3em;
-            margin-bottom: 0;
+            margin: 0;
         }
 
         .text {
@@ -40,6 +40,25 @@ $size: 560px;
 
         .image {
             width: 60%;
+        }
+
+        .info {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .pix {
+            font-family: $text;
+            font-size: 1.75em;
+
+            &__title {
+                margin: 0 0 0.25em 0;
+            }
+
+            &__key {
+                margin-top: 0;
+            }
         }
 
         .close {
