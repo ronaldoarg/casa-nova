@@ -1,0 +1,77 @@
+@import "src/assets/styles/variables.scss";
+
+$size: 560px;
+
+.popup {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba(0, 0, 0, 0.3);
+
+    &__container {
+        width: $size;
+        height: $size;
+        background: #fff;
+        padding: 3em;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .title {
+            font-family: $title;
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 0;
+        }
+
+        .text {
+            font-family: $text;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .image {
+            width: 60%;
+        }
+
+        .close {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            width: 16px;
+            height: 16px;
+            opacity: 0.3;
+
+            cursor: pointer;
+            
+            &:hover {
+                opacity: 1;
+            }
+
+            &:before, &:after {
+                position: absolute;
+                left: 8px;
+                content: ' ';
+                height: 17px;
+                width: 2px;
+                background-color: #333;
+            }
+
+            &:before {
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

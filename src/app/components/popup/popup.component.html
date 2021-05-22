@@ -1,0 +1,9 @@
+<section class="popup" *ngIf="isVisible">
+  <div class="popup__container">
+    <h3 class="title">Muito obrigado(a)</h3>
+    <p class="text">Sua contribuição é muito importante pra gente. Não vemos a hora de poder recebê-lo(a) em nossa nova
+      casinha e retribuir esse carinho <3 </p>
+        <img src="assets/images/qrcodes/{{qrcode}}.jpeg" alt="QR Code para Pix" class="image">
+        <span class="close" (click)="update.emit(false)"></span>
+  </div>
+</section>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from './product.type';
 
 @Component({
@@ -8,22 +8,17 @@ import { Product } from './product.type';
 })
 export class ProductComponent implements OnInit {
 
-  product: Product;
+  @Input() product: Product;
+  isPopupVisible: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    this.isPopupVisible = false;
+  }
 
-    this.product = {
-      image: "src/assets/images/produto01.jpg",
-      name: "Hack Show",
-      fee: {
-        total: 20,
-        current: 20
-      },
-      description: "Hack lindo com palhinha",
-      price: "R$ 30"
-    }
+  setPopupVisibility(data: boolean) {
+    this.isPopupVisible = data;
   }
 
 }
