@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
           total: 5,
           current: 3
         },
-        description: "Pra fazer uma comida show",
+        description: "Pra fazer aquelas comida show",
         price: "50"
       },
       {
@@ -116,7 +116,7 @@ export class AppComponent implements OnInit {
       },
       {
         image: "/assets/images/products/utensilios.jpeg",
-        name: "Utensílios",
+        name: "Pra ajudar a fazer umas comidas show",
         fee: {
           total: 3,
           current: 1
