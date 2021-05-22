@@ -15,8 +15,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.products = [
       {
-        image: "src/assets/images/products/talheres.jpeg",
-        name: "Faqueiro",
+        image: "/assets/images/products/talheres.jpeg",
+        name: "Talheres",
         fee: {
           total: 5,
           current: 4
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
         price: "30"
       },
       {
-        image: "src/assets/images/products/copos.jpeg",
+        image: "/assets/images/products/copos.jpeg",
         name: "Jogo de copos",
         fee: {
           total: 3,
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         price: "10"
       },
       {
-        image: "src/assets/images/products/panelas.jpeg",
+        image: "/assets/images/products/panelas.jpeg",
         name: "Jogo de panelas",
         fee: {
           total: 5,
@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
         price: "50"
       },
       {
-        image: "src/assets/images/products/pratos.jpeg",
+        image: "/assets/images/products/pratos.jpeg",
         name: "Pratos",
         fee: {
           total: 4,
@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
         price: "20"
       },
       {
-        image: "src/assets/images/products/jogo-americano.jpeg",
+        image: "/assets/images/products/jogo-americano.jpeg",
         name: "Jogo Americano",
         fee: {
           total: 6,
@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
         price: "10"
       },
       {
-        image: "src/assets/images/products/xicaras.jpeg",
+        image: "/assets/images/products/xicaras.jpeg",
         name: "Xícaras",
         fee: {
           total: 6,
@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
         price: "15"
       },
       {
-        image: "src/assets/images/products/tacas.jpeg",
+        image: "/assets/images/products/tacas.jpeg",
         name: "Taças",
         fee: {
           total: 3,
@@ -85,17 +85,17 @@ export class AppComponent implements OnInit {
         price: "20"
       },
       {
-        image: "src/assets/images/products/tijela.jpeg",
+        image: "/assets/images/products/tijela.jpeg",
         name: "Cumbucas",
         fee: {
           total: 3,
           current: 1
         },
-        description: "Pra dar aquele xarme na cozinha",
+        description: "Pra dar aquele charme na cozinha",
         price: "30"
       },
       {
-        image: "src/assets/images/products/potes.jpeg",
+        image: "/assets/images/products/potes.jpeg",
         name: "Potes variados",
         fee: {
           total: 6,
@@ -105,34 +105,34 @@ export class AppComponent implements OnInit {
         price: "20"
       },
       {
-        image: "src/assets/images/products/garrafa.jpeg",
+        image: "/assets/images/products/garrafa.jpeg",
         name: "Garrafa",
         fee: {
           total: 3,
           current: 3
         },
-        description: "Garrafa",
+        description: "Beber awa",
         price: "20"
       },
       {
-        image: "src/assets/images/products/utensilios.jpeg",
-        name: "Utensilios",
+        image: "/assets/images/products/utensilios.jpeg",
+        name: "Utensílios",
         fee: {
           total: 3,
           current: 1
         },
-        description: "Utensilios",
-        price: "30"
+        description: "Utensílios",
+        price: "20"
       },
       {
-        image: "src/assets/images/products/escorredor.jpeg",
+        image: "/assets/images/products/escorredor.jpeg",
         name: "Escorredor",
         fee: {
           total: 6,
           current: 4
         },
-        description: "Escorredor",
-        price: "20"
+        description: "Pra louça ficar limpinha e organizada",
+        price: "30"
       },
     ]
   }
