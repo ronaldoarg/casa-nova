@@ -116,12 +116,12 @@ export class AppComponent implements OnInit {
       },
       {
         image: "/assets/images/products/utensilios.jpeg",
-        name: "Pra ajudar a fazer umas comidas show",
+        name: "Utensílios",
         fee: {
           total: 3,
           current: 1
         },
-        description: "Utensílios",
+        description: "Pra ajudar a fazer umas comidas show",
         price: "20"
       },
       {
