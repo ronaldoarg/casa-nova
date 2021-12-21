@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
         name: "Jogo de panelas",
         fee: {
           total: 5,
-          current: 3
+          current: 2
         },
         description: "Pra fazer aquelas comida show",
         price: "50"
